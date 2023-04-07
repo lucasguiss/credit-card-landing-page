@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form>
+    <section id="credit-card">
+      <div class="front">
+      </div>
+      <div class="back">
+      </div>
+    </section>
+    <section class="inputs flex">
+      <div class="input-wrapper">
+        <label for="cc-number">Card Number</label>
+        <input id="cc-number" type="text" placeholder="**** **** **** ****">
+      </div>
+      <div class="input-wrapper">
+        <label for="cc-holder">Card Holder</label>
+        <input id="cc-holder" type="text" placeholder="Name in the card" required>
+        <div class="warning"> 
+          <img src="https://i.ibb.co/S61Zd7D/Warning.png" alt="Alert Icon">
+          Card Holder is mandatory.
+      </div>
+      <div class="col-2 flex">
+        <div class="input-wrapper">
+          <label for="cc-validity">Card Validity</label>
+          <input id="cc-validity" type="text" placeholder="mm/yy">
+        </div>
+        <div class="input-wrapper">
+          <label class="flex help" for="cc-cvv">Card Security Code 
+            <img src="https://i.ibb.co/ph8sxy4/Vector.png" alt="Help Icon" title="This number usually is in the back of your card">
+          </label>
+          <input id="cc-cvv" type="text" placeholder="***">
+        </div>
+      </div>
+    </section>
+    <section class="info-security flex">
+      <img src="https://i.ibb.co/VwgWjqY/Shield-Check.png" alt="Security Icon">
+      Your data is safe
+    </section>
+    <button>Add card</button>
+  </form>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
